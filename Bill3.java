@@ -7,7 +7,8 @@ public class Bill3 {
 	     String name3 = args[2]; // Shaked
 		 double amount = Double.parseDouble(args[3]); // bill amount
 		 double check = amount / 3; // each diner's share
-		 System.out.println("Dear " +name1 + ", " + name2 + " and " + name3 + ": pay '" + check + " Shekels each.");
+		 double FinalCheck = Math.ceil(check);
+		 System.out.println("Dear " + name3 + ", " + name2 + " and " + name1 + ": pay " + FinalCheck + " Shekels each.");
 
 	}
 }
