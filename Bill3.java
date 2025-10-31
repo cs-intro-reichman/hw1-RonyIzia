@@ -8,7 +8,7 @@ public class Bill3 {
 		 double amount = Double.parseDouble(args[3]); // bill amount
 		 double check = amount / 3; // each diner's share
 		 double FinalCheck = Math.ceil(check);
-		 System.out.println("Dear " + name3 + ", " + name2 + " and " + name1 + ": pay " + FinalCheck + " Shekels each.");
+		 System.out.println("Dear " + name3 + ", " + name2 + ", and " + name1 + ": pay " + FinalCheck + " Shekels each.");
 
 	}
 }
