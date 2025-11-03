@@ -4,13 +4,22 @@ public class TimeFormat {
 	String[] time = args[0].split(":");
   	int hours = Integer.parseInt(time[0]);
   	int mins = Integer.parseInt(time[1]);
-  
-    String[] periods = {"AM", "PM"};
-	String period = periods[Math.floorDiv(hours,12)];
+    
+	if(hours == 00){
+	int hour0 = hours + 12;
+	System.out.println(hour0 + ":" + mins + " AM");}
+	
+	else{
+	if (hours >= 12){
+	   int hour = hours - 12;
+	   System.out.println(hour + ":" + mins + " PM");
+	 } 
+	else{
+		System.out.println(hours + ":" + mins + " AM");
 
-	int formattedHours = (hours % 12 == 0) ? 12 : hours % 12;
-
-	System.out.println(formattedHours + ":" + mins + " " + period);
+	    }
+    }
+	
 	}
 }
 
